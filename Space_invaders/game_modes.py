@@ -82,10 +82,10 @@ def start(screen, alien_speed, alien_fire_interval=0):
     pygame.mixer.init()
 
     # Load and scale images
-    background = pygame.image.load('asset/bg.png')
+    background = pygame.image.load('Space_invaders/asset/bg.png')
     background = pygame.transform.scale(background, WINDOW_SIZE)
 
-    spaceship = pygame.image.load('asset/spaceship.png')
+    spaceship = pygame.image.load('Space_invaders/asset/spaceship.png')
     spaceship = pygame.transform.scale(spaceship, SPACESHIP_SIZE)
 
     alien_images = [
