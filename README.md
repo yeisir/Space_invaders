@@ -23,7 +23,7 @@ Shooting game developed with Pygame. The goal is to control a spaceship and defe
 ### English
 1. Download the codes to a folder.
 2. Install the `pygame`, `sys`, `random` libraries.
-3.Run the main.py file:
+3.  Run the main.py file:
 
    ```bash
    python3 main.py
