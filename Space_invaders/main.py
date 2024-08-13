@@ -42,7 +42,7 @@ def show_main_menu(screen, sound):
         pygame.display.flip()
 
 def show_difficulty_menu(screen, sound):
-    font = pygame.font.Font('honk.ttf', 75)
+    font = pygame.font.Font('Space_invaders/honk.ttf', 75)
     easy_text = font.render("Easy", True, (255, 255, 255))
     medium_text = font.render("Medium", True, (255, 255, 255))
     hard_text = font.render("Hard", True, (255, 255, 255))
