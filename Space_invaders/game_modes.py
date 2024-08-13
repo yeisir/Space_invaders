@@ -6,13 +6,13 @@ from config import WINDOW_SIZE
 # Ship and alien settings
 SPACESHIP_SIZE = (50, 30)
 BULLET_SIZE = (3, 15)
-BULLET_SPEED = 15
+BULLET_SPEED = 30
 ALIEN_SIZE = (40, 30)
 ALIEN_SPEED_EASY = 6  
 ALIEN_SPEED_MEDIUM = 8  
 ALIEN_SPEED_HARD = 10  
 ALIEN_SPAWN_INTERVAL = 40
-FONT_PATH = 'honk.ttf'
+FONT_PATH = 'Space_invaders/honk.ttf'
 
 def show_game_over(screen, score):
     font = pygame.font.Font(FONT_PATH, 75)
@@ -89,18 +89,18 @@ def start(screen, alien_speed, alien_fire_interval=0):
     spaceship = pygame.transform.scale(spaceship, SPACESHIP_SIZE)
 
     alien_images = [
-        pygame.transform.scale(pygame.image.load('asset/alien1.png'), ALIEN_SIZE),
-        pygame.transform.scale(pygame.image.load('asset/alien2.png'), ALIEN_SIZE),
-        pygame.transform.scale(pygame.image.load('asset/alien3.png'), ALIEN_SIZE),
-        pygame.transform.scale(pygame.image.load('asset/alien4.png'), ALIEN_SIZE),
-        pygame.transform.scale(pygame.image.load('asset/alien5.png'), (80, 60))  # Alien gigante
+        pygame.transform.scale(pygame.image.load('Space_invaders/asset/alien1.png'), ALIEN_SIZE),
+        pygame.transform.scale(pygame.image.load('Space_invaders/asset/alien2.png'), ALIEN_SIZE),
+        pygame.transform.scale(pygame.image.load('Space_invaders/asset/alien3.png'), ALIEN_SIZE),
+        pygame.transform.scale(pygame.image.load('Space_invaders/asset/alien4.png'), ALIEN_SIZE),
+        pygame.transform.scale(pygame.image.load('Space_invaders/asset/alien5.png'), (80, 60))  # Alien gigante
     ]
 
     # Load sounds
-    laser_sound = pygame.mixer.Sound('asset/laser.wav')
-    explosion_sound = pygame.mixer.Sound('asset/explosion.wav')
-    explosion2_sound = pygame.mixer.Sound('asset/explosion2.wav')
-    life_sound = pygame.mixer.Sound('asset/life.wav')  # Sonido para perder una vida
+    laser_sound = pygame.mixer.Sound('Space_invaders/asset/laser.wav')
+    explosion_sound = pygame.mixer.Sound('Space_invaders/asset/explosion.wav')
+    explosion2_sound = pygame.mixer.Sound('Space_invaders/asset/explosion2.wav')
+    life_sound = pygame.mixer.Sound('Space_invaders/asset/life.wav')  # Sonido para perder una vida
 
     # Initialize spaceship position and speed
     spaceship_x = WINDOW_SIZE[0] // 2 - SPACESHIP_SIZE[0] // 2

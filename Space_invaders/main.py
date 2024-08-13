@@ -4,7 +4,7 @@ from config import WINDOW_SIZE
 from game_modes import ALIEN_SPEED_EASY, ALIEN_SPEED_MEDIUM, ALIEN_SPEED_HARD, start
 
 def show_main_menu(screen, sound):
-    font = pygame.font.Font('honk.ttf', 75)
+    font = pygame.font.Font('Space_invaders/honk.ttf', 75)
     start_text = font.render("Start", True, (255, 255, 255))
     quit_text = font.render("Quit", True, (255, 255, 255))
     
@@ -92,7 +92,7 @@ def main():
     pygame.display.set_caption("Space Invader")
     
     pygame.mixer.init()
-    main_sound = pygame.mixer.Sound('asset/space.wav')
+    main_sound = pygame.mixer.Sound('Space_invaders/asset/space.wav')
     
     main_sound.play(-1)  # Reproduce el sonido en bucle
     
